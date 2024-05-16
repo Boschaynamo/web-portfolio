@@ -24,8 +24,8 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                width={150}
-                height={150}
+                width={300}
+                height={300}
                 className="mb-6 rounded"
               />
             </motion.div>
@@ -35,7 +35,16 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
+              {/* <h6 className={'mb-2 font-semibold'+ (project.url?.length > 0 ?  'border-b' : '')}>{project.title}</h6> */}
+              <h6 className="mb-2 font-semibold">
+                {project.url?.length > 0 ? (
+                  <a className="border-b" href={project.url} target="_blank">
+                    {project.title}
+                  </a>
+                ) : (
+                  project.title
+                )}
+              </h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               {project.technologies.map((tech, index) => (
                 <span
