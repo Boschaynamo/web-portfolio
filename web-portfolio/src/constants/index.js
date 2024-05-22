@@ -13,7 +13,7 @@ export const EXPERIENCES = [
     year: "Aug 2022 - Present",
     role: "Electronics Technician",
     company: "National Institute of Microbiology Dr. Carlos Malbrán",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    description: `I am responsible for the corrective and preventive maintenance of laboratory equipment, as well as in the repair and installation of microbiology equipment. Additionally, I successfully led a project to develop an electronic carbon dioxide injection system, featuring monitoring and control capabilities through a web-based WiFi interface.`,
     technologies: ["HTML", "CSS", "Javascript", "C++"],
   },
   // {
