@@ -23,8 +23,8 @@ function About() {
         initial={{opacity:0,x:100}}
         transition={{duration:0.5}}
         className="w-full lg:w-1/2">
-          <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
+          <div className="flex flex-col justify-center lg:justify-start">
+            {ABOUT_TEXT.map((paragraph,index)=><p key={index} className="my-1 max-w-xl py-4">{paragraph}</p>)}
           </div>
         </motion.div>
       </div>

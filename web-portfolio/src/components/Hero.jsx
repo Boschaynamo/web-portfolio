@@ -47,15 +47,16 @@ function Hero() {
             initial='hidden'
             animate='visible'
             className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
-              Electronic Engineer
+              Electronics Engineer
             </motion.span>
-            <motion.p
+            {HERO_CONTENT.map((paragraph,index)=><motion.p
+            key={index}
             variants={container(1.5)}
             initial='hidden'
             animate='visible'
-            className="my-2 max-w-xl py-6 font-light tracking-tighter">
-              {HERO_CONTENT}
-            </motion.p>
+            className="mt-4 max-w-xl py-1 font-light tracking-tighter">
+              {paragraph}
+            </motion.p>)}
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">

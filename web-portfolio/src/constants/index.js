@@ -3,10 +3,17 @@ import project2 from "../assets/projects/project-2.png";
 // import project3 from "../assets/projects/project-3.jpg";
 // import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a Full Stack Developer with a background in Electronic Engineering, which has helped me develop skills such as teamwork and analysing complex systems. My focus is on developing comprehensive solutions that includes Front-End and Back-End software, as well as hardware. I have knowledge of agile methodologies, GIT, data structures, algorithms, and CSS frameworks. I have experience in Front-End and Back-End development with Tailwind CSS, React, Node.js, Express, PostgreSQL, Sequelize, and Redux.`;
+export const HERO_CONTENT = [
+  `I am a Full Stack Developer with a background in Electronic Engineering, which has helped me develop skills such as teamwork and analysing complex systems. My focus is on developing comprehensive solutions that includes Front-End and Back-End software, as well as hardware.`,
+  ` I have knowledge of agile methodologies, GIT, data structures, algorithms, and CSS frameworks. I have experience in Front-End and Back-End development with Tailwind CSS, React, Node.js, Express, PostgreSQL, Sequelize, and Redux.`,
+];
 
-export const ABOUT_TEXT = `As a recent graduate in electronics engineering, I have honed my problem-solving abilities through various electronics projects, demonstrating my capacity to analyze complex systems and devise innovative solutions. These experiences have equipped me with a strong foundation in various programming languages as well as proficiency in software development methodologies.
-I am always on the lookout to learn and grow my knowledge and skills in software development.`;
+export const ABOUT_TEXT = [
+  `As a recent graduate in electronics engineering, I have honed my problem-solving abilities through various electronics projects, demonstrating my capacity to analyze complex systems and devise innovative solutions.`,
+  ` These experiences have equipped me with a strong foundation in various programming languages as well as proficiency in software development methodologies.
+I am always on the lookout to learn and grow my knowledge and skills in software development.`,
+`Now, I am looking for working in the IT sector`
+];
 
 export const EXPERIENCES = [
   {
@@ -42,19 +49,35 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "E-Commerce Website - Innovatech",
-    url:"https://innovatechok.vercel.app/",
+    url: "https://innovatechok.vercel.app/",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React","Redux", "Node.js", "Express","PostgreSQL","Sequelize"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "React",
+      "Redux",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Sequelize",
+    ],
   },
   {
     title: "DC Programmable electronic load",
-    url:"https://drive.google.com/file/d/1QvRNrC_lQLjZ7vJVON4Kn-dWL3zSZihC/view",
+    url: "https://drive.google.com/file/d/1QvRNrC_lQLjZ7vJVON4Kn-dWL3zSZihC/view",
     image: project2,
     description:
       "Construction of a laboratory instrument that emulates a direct current electrical resistor. Electronic loads are essential for functional testing of batteries, power supplies, solar panels, and other power equipment. In this project was implemented a web page for remote control and monitoring of the electronic load which expanded the system's capabilities and provided a flexible user interface accessible from any device with an Internet connection. This web page was fully embedded within the microcontroller used.",
-    technologies: ["HTML", "CSS", "Javascript", "C++", "LVGL", "Hardware Design"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "C++",
+      "LVGL",
+      "Hardware Design",
+    ],
   },
   // {
   //   title: "Portfolio Website",
@@ -73,7 +96,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Quilmes, Buenos Aires, Argentina ",
+  address: "Buenos Aires, Argentina ",
   phoneNo: "+54 11 5124 8956 ",
   email: "nico_947quil@hotmail.com",
 };

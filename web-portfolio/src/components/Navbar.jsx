@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 // import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { CONTACT } from "../constants";
 function Navbar() {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
@@ -10,6 +11,14 @@ function Navbar() {
         <div className="mx-2 w-24 font-DM_Serif_Display text-5xl text-center">
           NB
           {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
+        </div>
+      </div>
+      <div className="flex flex-row">
+        <div className="mx-2 text-2xl text-center content-center">Contact:</div>
+        <div className="mx-2 text-2xl text-center flex flex-col">
+          <div className="mx-2 text-base text-start">{CONTACT.address}</div>
+          <div className="mx-2 text-base text-start">{CONTACT.email}</div>
+          <div className="mx-2 text-base text-start">{CONTACT.phoneNo}</div>
         </div>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl ">
